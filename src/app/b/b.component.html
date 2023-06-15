@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>Bug Tracker</title>
+	<link rel="stylesheet"
+		href="b.component.css">
+	<link rel="stylesheet"
+		href="b.component1.css">
+		
+			
+		  
+		<style>
+			table {
+			  width: 100%;
+			  border-collapse: collapse;
+			}
+		
+			th, td {
+			  padding: 8px;
+			  text-align: left;
+			  border-bottom: 1px solid #ddd;
+			}
+		
+			th {
+			  background-color: #f2f2f2;
+			}
+
+			/* .search-container {
+      display: flex;
+      align-items: center;
+      width: 300px;
+    } */
+/*     
+    .search-input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+    } */
+    
+    .search-button {
+      padding: 8px 12px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+	  width: 100px;
+	  height: 45px;
+    }
+		</style>
+</head>
+
+<body>
+
+	<!-- for header part -->
+	<header>
+
+		<div class="logosec">
+			<div class="logo">Bug Tracker</div>
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+				class="icn menuicn"
+				id="menuicn"
+				alt="menu-icon">
+		</div>
+
+		<div class="searchbar">
+			<input type="text"
+				placeholder="Search">
+			<div class="searchbtn">
+			<img src=
+"https://tse3.mm.bing.net/th/id/OIP.QNAx0aIErXUYCygJ9RjohgHaHa?pid=ImgDet&rs=1"
+					class="icn srchicn"
+					alt="search-icon">
+			</div>
+		</div>
+
+		<div class="message">
+			<div class="circle"></div>
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
+				class="icn"
+				alt="">
+			<div class="dp">
+			<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+					class="dpicn"
+					alt="dp">
+			</div>
+		</div>
+
+	</header>
+
+	<div class="main-container">
+		<div class="navcontainer">
+			<nav class="nav">
+				<div class="nav-upper-options">
+					<div class="nav-option option1">
+						<img src=
+"https://static.vecteezy.com/system/resources/previews/000/627/632/original/vector-home-icon-symbol-sign.jpg"
+							class="nav-img"
+							alt="dashboard">
+						<h3>Home</h3>
+					</div>
+
+					<div class="option2 nav-option">
+						<img src=
+"https://tse3.mm.bing.net/th/id/OIP.FNLhScNZKJwjucJboG-RHgHaHa?pid=ImgDet&rs=1"
+							class="nav-img"
+							alt="articles">
+						<h3> About</h3>
+					</div>
+
+					<div class="option2 nav-option">
+						<img src=
+"https://tse1.mm.bing.net/th/id/OIP.FhZwWr_ieJbTAXspxoMXaQHaHa?pid=ImgDet&rs=1"
+							class="nav-img"
+							alt="articles">
+						<h3>Contact</h3>
+					</div>
+
+					
+
+					<div class="nav-option option6">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+							class="nav-img"
+							alt="settings">
+						<h3> Settings</h3>
+					</div>
+
+					<div class="nav-option logout">
+						<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+							class="nav-img"
+							alt="logout">
+						<h3>Logout</h3>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+		<div class="main">
+
+			<div class="searchbar2">
+				<input type="text"
+					name=""
+					id=""
+					placeholder="Search">
+				<div class="searchbtn">
+				<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+						class="icn srchicn"
+						alt="search-button">
+				</div>
+			</div>
+
+			<div class="box-container">
+
+
+				<!-- <div class="box box4">
+					<div class="text">
+						<h2 class="topic-heading">70</h2>
+						<h2 class="topic">Published</h2>
+					</div>
+
+					<img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+				</div> -->
+			</div>
+
+			
+
+			<div class="report-container">
+				<div class="report-header">
+					<h1 class="recent-Articles">Project List</h1>
+					<button class="view">View All</button>
+				</div>
+
+				<div class="report-body">
+					<div class="search-container">  
+						<input type="text" class="search-input" placeholder="Search...">
+						<button class="search-button">Search</button>
+					  </div>
+					<div class="report-topic-heading">
+						
+						<table>
+							
+							<thead>
+							<tr>
+							<th>ID</th>
+							<th>Project Name</th>
+							<th>Assigned To</th>
+							<th>Assigned By</th>
+							<th>Status</th>
+							<th>Created Date</th>
+							<th>Updated Date</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+							<td>1</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">DataSync</a></td>
+							<td>John Doe</td>
+							<td>Jane Smith</td>
+							<td>Open</td>
+							<td>2023-06-01</td>
+							<td>2023-06-02</td>
+							</tr>
+							<tr>
+							<td>2</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">CyberShield</a></td>
+							<td>Mike Johnson</td>
+							<td>John Smith</td>
+							<td>In Progress</td>
+							<td>2023-02-03</td>
+							<td>2023-06-24</td>
+							</tr>
+
+							<td>3</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">CloudTrack</a></td>
+			
+							<td>Benjamin</td>
+							<td>Smith</td>
+							<td>Closed</td>
+							<td>2023-04-23</td>
+							<td>2023-06-05</td>
+							</tr>
+
+							<td>4</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">eCommerceX</a></td>
+							<td>Mike Johnson</td>
+							<td>Aswin</td>
+							<td>Closed</td>
+							<td>2023-06-30</td>
+							<td>2023-07-05</td>
+							</tr>
+
+							<td>5</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">MobileSecure</a></td>
+							<td>Benjamin</td>
+							<td>Mathew</td>
+							<td>In Progress</td>
+							<td>2023-10-27</td>
+							<td>2024-06-05</td>
+							</tr>
+
+							<!-- <td>6</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">WebBoost</a></td>
+				
+							<td>William</td>
+							<td>Steve</td>
+							<td>In Progress</td>
+							<td>2023-03-25</td>
+							<td>2023-06-05</td>
+							</tr>
+
+							<td>7</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">AIQuest</a></td>
+					
+							<td>Olivia</td>
+							<td>Richard</td>
+							<td>Open</td>
+							<td>2023-11-03</td>
+							<td>2023-12-05</td>
+							</tr>
+
+							<td>8</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">CloudTrack</a></td>
+						
+							<td>Manjima</td>
+							<td>Athul</td>
+							<td>OPen</td>
+							<td>2023-12-01</td>
+							<td>2024-01-05</td>
+							</tr>
+
+							<td>9</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">NetConnect</a></td>
+							
+							<td>Surya</td>
+							<td>Cleopatra</td>
+							<td>In Progress</td>
+							<td>2023-09-15</td>
+							<td>2023-09-25</td>
+							</tr>
+
+							<td>10</td>
+							<td><a href="http://127.0.0.1:5500/src/app/bugupdation/bugupdation.component.html">AppLaunch</a></td>
+			
+							<td>John Smith</td>
+							<td>Harry</td>
+							<td>Closed</td>
+							<td>2023-08-12</td>
+							<td>2023-09-05</td> -->
+							</tr>
+
+							
+							<!-- Add more rows as needed -->
+							</tbody>
+							</table>
+
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+	<script src="./b.component.js"></script>
+</body>
+</html>
